@@ -2,7 +2,7 @@ const express=require('express');
 const app=express();
 const Router=require('./src/Router/Index');
 require("dotenv").config();
-const PORT=process.env.PORT;
+const PORT=process.env.PORT||3000;
 const Connectdb=require('./connectdb');
 const bodyparser=require('body-parser');
 const cors=require('cors');
